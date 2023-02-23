@@ -11,9 +11,10 @@ datasource db {
 }
 
 model Logs{
-  id      String  @id @default(auto()) @map("_id") @db.ObjectId
-  message String
-  data    DateTime
+  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+  operation String
+  message   String
+  data      DateTime
 }
 
 model Presencas{
