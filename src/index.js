@@ -1,5 +1,5 @@
 import express  from "express";
-import status from "./routes/healthRoute.js"
+import status from "./routes/statusRoute.js";
 
 const app = express();
 
@@ -10,5 +10,5 @@ app.use(express.urlencoded({ extended: true }));
 console.clear();
 app.listen(3000, () => {
     console.log("-- Server ON --")
-    app.use('/api',status)
+    app.use('/api', status)
 });
