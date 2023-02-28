@@ -10,17 +10,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Logs{
-  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+model Logs {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   operation String
   message   String
   data      DateTime
 }
 
-model Presencas{
-  id       String  @id @default(auto()) @map("_id") @db.ObjectId
-  usuario  String
-  presenca Boolean
-  data     DateTime
-  message  String
+model Presencas {
+  ID                     String   @id @default(auto()) @map("_id") @db.ObjectId
+  TempoAtivo             DateTime
+  Data                   DateTime
+  Usuario                String
+  Organizacao            String
+  QuantidadeDeMovimentos Int
+  HorarioDeEntrada       DateTime
+  HorarrioDeSaida        DateTime
 }
