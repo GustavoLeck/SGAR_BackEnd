@@ -12,6 +12,7 @@ datasource db {
 
 model Logs {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  status    String
   operation String
   message   String
   data      DateTime
