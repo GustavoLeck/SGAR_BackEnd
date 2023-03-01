@@ -19,11 +19,9 @@ model Logs {
 
 model Presencas {
   ID                     String   @id @default(auto()) @map("_id") @db.ObjectId
-  TempoAtivo             DateTime
+  TempoAtivo             Int
   Data                   DateTime
   Usuario                String
   Organizacao            String
   QuantidadeDeMovimentos Int
-  HorarioDeEntrada       DateTime
-  HorarrioDeSaida        DateTime
 }
