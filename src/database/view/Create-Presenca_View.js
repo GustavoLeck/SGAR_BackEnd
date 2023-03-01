@@ -1,4 +1,3 @@
-import moment from "moment/moment.js";
 import { prisma } from "../../prisma/client.js";
 
 export class CreatePresencaView {
