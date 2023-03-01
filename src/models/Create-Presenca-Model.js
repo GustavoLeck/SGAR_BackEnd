@@ -1,3 +1,4 @@
+import moment from "moment/moment.js";
 export class CreatePresencaModel {
   constructor(presenca) {
     this.TempoAtivo = presenca.TempoAtivo;
