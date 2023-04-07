@@ -5,6 +5,7 @@ export class LogModel {
     this.status = log.status;
     this.operation = log.operation;
     this.message = JSON.stringify(log.message);
-    this.data = moment().format();
+    this.data = moment().locale("pt-br").format("DD-mm-YYYY");
   }
 }
+s
